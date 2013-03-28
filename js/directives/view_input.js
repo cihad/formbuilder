@@ -12,12 +12,12 @@ FB.directive('viewInput', function($document, $timeout, $http, $compile, $templa
           '<div class="arrow"></div>' +
           '<div class="popover-inner">' +
             '<h3 class="popover-title" ng-bind="input.name"></h3>' +
-            '<div class="popover-content" ng-include src="\'/template/inputs/' + type + '/conf.html\'">' +
+            '<div class="popover-content" ng-include src="\'template/inputs/' + type + '/conf.html\'">' +
             '</div>' +
           '</div>' +
         '</div>' +
       '</div>' +
-      '<div ng-class="warningClass(form' + timestamp + ')" id="' + timestamp + '_input" ng-include src="\'/template/inputs/' + scope.input.type + '/input.html\'" >' +
+      '<div ng-class="warningClass(form' + timestamp + ')" id="' + timestamp + '_input" ng-include src="\'template/inputs/' + scope.input.type + '/input.html\'" >' +
       '</div>';
 
     var tooltip = $compile( template )( scope );
