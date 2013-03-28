@@ -1,0 +1,107 @@
+[
+  {
+    "type": "text",
+    "name": "Text",
+    "conf": {
+      "label": "Text",
+      "placeholder": "placeholder for text field",
+      "hint": "",
+      "required": true
+    }
+  },
+  {
+    "type": "number",
+    "name": "Number",
+    "conf": {
+      "label": "Number",
+      "placeholder": "placeholder for number field",
+      "hint": "",
+      "max": 10000
+    }
+  },
+  {
+    "type": "textarea",
+    "name": "Textarea",
+    "conf": {
+      "label": "String",
+      "hint": "",
+      "placeholder": "",
+      "rows": 3
+    }
+  },
+  {
+    "type": "email",
+    "name": "Email",
+    "conf": {
+      "label": "Email",
+      "hint": "",
+      "placeholder": "ex. iam@example.com"
+    }
+  },
+  {
+    "type": "select",
+    "name": "Select",
+    "conf": {
+      "label": "Select",
+      "required": true,
+      "hint": "",
+      "multiple": false,
+      "options": [
+        { "name": "Option 1" },
+        { "name": "Option 2" },
+        { "name": "Option 3" },
+        { "name": "Option 4" },
+        { "name": "Option 5" },
+        { "name": "Option 6" }
+      ]
+    }
+  },
+  {
+    "type": "upload",
+    "name": "File upload",
+    "conf": {
+      "label": "Upload Label",
+      "hint": ""
+    }
+  },
+  {
+    "type": "color",
+    "name": "Color",
+    "conf": {
+      "label": "Color",
+      "hint": ""
+    }
+  },
+  {
+    "type": "url",
+    "name": "Url",
+    "conf": {
+      "label": "Url",
+      "hint": ""
+    }
+  },
+  {
+    "type": "checkbox",
+    "name": "Checkbox",
+    "conf": {
+      "label": "Checkboxes",
+      "hint": "",
+      "options": [
+        { "name": "Checkbox 1" },
+        { "name": "Checkbox 2" }
+      ]
+    }
+  },
+  {
+    "type": "radio",
+    "name": "Radio Buttons",
+    "conf": {
+      "label": "Radio buttons",
+      "hint": "",
+      "options": [
+        { "name": "Radio button 1" },
+        { "name": "Radio button 2" }
+      ]
+    }
+  }
+]

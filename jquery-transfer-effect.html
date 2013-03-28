@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset=utf-8 />
+  <title>Form Generator</title>
+</head>
+<body>
+
+
+
+<div class="container">
+
+  <h3>Form Generator</h3>
+  <hr />
+
+  <div class="row">
+
+
+    <div class="span4" id="source">
+
+
+      <legend>Alanlar</legend>
+      <ul>
+        <li>
+          <a href="#">Large Text</a>
+          <!-- Large Text -->
+          <div class="control-group" id="popover" rel="popover" data-original-title="A Title">
+            <label class="control-label">Large Text Field</label>
+            <div class="controls">
+              <input type="text" id="largeText" class="input-xlarge" placeholder="placeholder">
+            </div>
+            <div class="form-elements">
+              <label class="control-label">Large Text Field</label>
+              <input type="text" id="largeText" placeholder="placeholder">
+            </div>
+          </div>
+
+        </li>
+
+        <li>
+          <a href="#">Text Field</a>
+          <!-- Text Field -->
+          <div class="control-group">
+            <label class="control-label">Text Field</label>
+            <div class="controls">
+              <input type="text" id="text" placeholder="placeholder">
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <a href="#">Single Select Field</a>
+          <!-- Single Select Field -->
+          <div class="control-group">
+            <label class="control-label">Single Select</label>
+            <div class="controls">
+              <select id="singleSelect">
+                <option>option 1</option>
+                <option>option 2</option>
+                <option>option 3</option>
+                <option>option 4</option>
+                <option>option 5</option>
+              </select>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <a href="#">Multiple Select Field</a>
+          <!-- Multiple Select Field -->
+          <div class="control-group">
+            <label class="control-label">Multiple Select</label>
+            <div class="controls">
+              <select id="multipleSelect" multiple="true">
+                <option>option 1</option>
+                <option>option 2</option>
+                <option>option 3</option>
+                <option>option 4</option>
+                <option>option 5</option>
+              </select>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <a href="#">Inline Chekbox Field</a>
+          <!-- Inline Chekbox Field -->
+          <div class="control-group">
+            <label class="control-label">Inline Checkbox Field</label>
+            <div class="controls">
+              <label class="checkbox inline">
+                <input type="checkbox" id="inlineCheckbox1" value="option1"> option 1
+              </label>
+              <label class="checkbox inline">
+                <input type="checkbox" id="inlineCheckbox2" value="option2"> option 2
+              </label>
+              <label class="checkbox inline">
+                <input type="checkbox" id="inlineCheckbox3" value="option3"> option 3
+              </label>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <a href="#">Chekbox Field</a>
+          <!-- Chekbox Field -->
+          <div class="control-group">
+            <label class="control-label">Checkbox Field</label>
+            <div class="controls">
+              <label class="checkbox">
+                <input type="checkbox" id="inlineCheckbox1" value="option1"> option 1
+              </label>
+              <label class="checkbox">
+                <input type="checkbox" id="inlineCheckbox2" value="option2"> option 2
+              </label>
+              <label class="checkbox">
+                <input type="checkbox" id="inlineCheckbox3" value="option3"> option 3
+              </label>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <a href="#">Radio Field</a>
+          <!-- Radio Field -->
+          <div class="control-group">
+            <label class="control-label">Radio Field</label>
+            <div class="controls">
+              <label class="radio">
+                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+                Option one
+              </label>
+              <label class="radio">
+                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                Option two
+              </label>
+              <label class="radio">
+                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                Option three
+              </label>
+              <label class="radio">
+                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                Option four
+              </label>
+            </div>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+    
+
+
+    <div id="target" class="span8">
+      <form class="form-horizontal">
+        <legend>Form</legend>
+        <div class="control-group" rel="popover" data-original-title="Large Text">
+          <label class="control-label">Başlık</label>
+          <div class="controls">
+            <input type="text" id="largeText" class="input-xlarge" placeholder="placeholder">
+          </div>
+        </div>
+        <div class="inputs">
+
+          <div class="control-group new" id="popover" rel="popover" data-original-title="A Title" style="position: relative;">
+            <label class="control-label">Large Text Field</label>
+            <div class="controls">
+              <input type="text" id="largeText" class="input-xlarge" placeholder="placeholder">
+            </div>
+            <div class="form-elements">
+              <label class="control-label">Large Text Field</label>
+              <input type="text" id="largeText" placeholder="placeholder">
+            </div>
+          </div>
+
+        </div>
+
+        <div class="control-group">
+          <div class="controls">
+            <button class="btn btn-primary" disabled>Kaydet</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+  <link href="css/jquery-ui.css" rel="stylesheet" type="text/css" />
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <script src="js/bootstrap-tooltip.js"></script>
+  <script src="js/bootstrap-popover.js"></script>
+  <script src="js/base.js"></script>
+</body>
+</html>

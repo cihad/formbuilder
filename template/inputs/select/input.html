@@ -1,0 +1,9 @@
+<div class="control-group" id="{{input.timestamp}}_input">
+  <label class="control-label" for="sampleField">{{input.conf.label}}</label>
+  <div class="controls">
+    <select ng-required="input.conf.required" class="input-xlarge" ng-multiple="input.conf.multiple">
+      <option value="" ng-repeat="option in input.conf.options">{{option.name}}</option>
+    </select>
+    <span class="help-block">{{input.conf.hint}}</span>
+  </div>
+</div>

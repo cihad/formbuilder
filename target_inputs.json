@@ -1,0 +1,47 @@
+[
+  {
+    "type": "text",
+    "name": "Text",
+    "conf": {
+      "label": "Text",
+      "placeholder": "",
+      "hint": "",
+      "required": true
+    }
+  },
+  {
+    "type": "number",
+    "name": "Number",
+    "conf": {
+      "label": "Number",
+      "placeholder": "",
+      "hint": "",
+      "max": 10000
+    }
+  },
+  {
+    "type": "textarea",
+    "name": "Textarea",
+    "conf": {
+      "label": "Textarea",
+      "hint": "",
+      "placeholder": "",
+      "rows": 3
+    }
+  },
+  {
+    "type": "select",
+    "name": "Select",
+    "conf": {
+      "label": "Select",
+      "required": true,
+      "hint": "",
+      "multiple": true,
+      "options": [
+        { "name": "Kiralık" },
+        { "name": "Satılık" },
+        { "name": "Günlük Kiralık" }
+      ]
+    }
+  }
+]

@@ -1,0 +1,67 @@
+#source {
+  padding-top: 21px;
+}
+#source .control-group {
+  display: none;
+}
+
+#source ul, li {
+  margin: 0;
+  padding:0;
+  list-style: none;
+}
+
+#source ul li a {
+  background: #fafafa url("../images/chevron_grey.png") 100% 50% no-repeat;
+  display: block;
+  padding: 10px;
+  color: #333;
+  border-bottom: 1px solid #eee;
+}
+
+#source ul li a:hover {
+  background-color: #f0f0f0;
+
+}
+
+#target form {
+  border: 1px solid #ccc;
+  padding: 20px 30px;
+  border-radius: 4px;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.new {
+  background: #FFFFE0;
+  border-radius: 4px;
+  position: relative;
+}
+
+.new::after {
+  content: "new" !important;
+  position: absolute;
+  top: 10px;
+  right: 5px;
+  color: red;
+  font-size: 0.9em;
+}
+
+.noneVisible { 
+  opacity: 0;
+}
+
+.ui-effects-transfer {
+  border: 2px dashed #555;
+  border-radius: 4px;
+}
+
+.form-elements {
+  display: none;
+}
+
+.popover {
+  width: 250px;
+}
