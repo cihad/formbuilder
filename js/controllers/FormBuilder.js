@@ -1,0 +1,1 @@
+FB.controller('App', function($scope) { });

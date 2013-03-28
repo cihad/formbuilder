@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Modern Forms</title>
+</head>
+<body ng-app="FormBuilder">
+
+
+<header class="header">
+  <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <a class="brand" href="#">FormBuilder</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+<div class="container" ng-controller="App" style="padding-top:50px;">
+
+  <!-- <h3 id="page-title">Better Forms &amp; Better Web</h3> -->
+
+  <div class="row">
+
+
+    <div class="span4" id="source" ng-controller="Source">
+      <div class="source-ins">
+
+        <legend>
+          <input autofocus type="text" ng-model="search.name" class="span3 search-query" style="margin: auto; display: block; margin-bottom:10px" placeholder="Search in {{inputs.length}} fields..">
+        </legend>
+      
+        <ul>
+          <li ng-repeat="input in inputs | filter:search">
+            <a href id="{{input.type}}" ng-click="addInput(input)">{{input.name}}</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
+    <div ng-controller="Target">
+      <div class="span8" id="target">
+
+
+
+        <div class="target-ins">
+
+          <div class="form-horizontal">
+
+            <legend>Form</legend>
+
+            <div class="inputs">
+              <div ng-repeat="input in inputs" class="input">
+                <div view-input input="input"></div>
+              </div>
+            </div>
+
+
+            <div class="form-actions">
+              <button class="btn btn-primary" disabled>Kaydet</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="form" class="span12">
+        <div class="form-ins">
+          <form class="form-horizontal">
+
+            <div class="inputs">
+              <conf ng-repeat="input in inputs" input="input"></conf>
+            </div>        
+    
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<link href="css/jquery-ui.css" rel="stylesheet" type="text/css" />
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+<link href="css/app.css" rel="stylesheet" type="text/css" />
+
+<!-- Depencies -->
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/angular.js"></script>
+
+<!-- App -->
+<script src="js/app.js"></script>
+
+<!-- Services -->
+<script src="js/services/source_inputs.js"></script>
+<script src="js/services/target_inputs.js"></script>
+<script src="js/services/helpers.js"></script>
+
+<!-- Controllers -->
+<script src="js/controllers/FormBuilder.js"></script>
+<script src="js/controllers/Source.js"></script>
+<script src="js/controllers/Target.js"></script>
+
+<!-- Directives -->
+<script src="js/directives/view_input.js"></script>
+<script src="js/directives/field.js"></script>
+<script src="js/directives/input_view.js"></script>
+<script src="js/directives/conf_popup.js"></script>
+<script src="js/directives/conf.js"></script>
+<!-- <script src="js/directives/tooltip.js"></script> -->
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+<fieldset id="{{input.timestamp}}_conf">
+  <div class="control-group">
+    <label for="label">Label</label>
+    <input type="text" id="label" name="abc" required placeholder="placeholder" ng-model="input.conf.label">
+  </div>
+
+  <div class="control-group">
+    <label for="label">Placeholder</label>
+    <input type="text" id="label" placeholder="placeholder" ng-model="input.conf.placeholder" />
+  </div>
+
+  <div class="control-group">
+    <label for="label">Hint</label>
+    <textarea rows="2" ng-model="input.conf.hint"></textarea>
+  </div>
+
+  <div class="control-group">
+    <label for="label">Required</label>
+    <label class="checkbox inline">
+      <input type="checkbox" ng-model="input.conf.required" /> required
+    </label>
+  </div>
+</fieldset>

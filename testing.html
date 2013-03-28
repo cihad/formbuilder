@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html ng-app="formBuilder">
+<head>
+  <meta charset=utf-8 />
+  <title>Form Generator</title>
+
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+  <script src="js/jquery.min.js"></script>
+  <script src="js/angular.js"></script>
+
+</head>
+<body>
+
+<script type="text/javascript">
+
+var app = angular.module('formBuilder', []);
+
+app.controller('FormBuilderCtrl', function($scope) {
+  
+});
+
+app.controller('SecondCtrl', function($scope) {
+
+})
+
+
+</script>
+
+<div class="container" ng-controller="FormBuilderCtrl">
+  <h3 style="color: white; font-weight: normal">Form Generator</h3>
+
+  <div class="row" ng-form="deneme123">
+
+
+    <div class="forClone">
+      <input type="text" ng-model="message" required />
+      {{message}}
+      <div class="alert alert-success" ng-show="deneme123.$valid">Valid</div>
+    </div>
+  
+    <div class="span4" id="source">
+      <a href="#" id="btn">Tik</a>
+    </div>
+    
+
+
+    <div id="target" class="span8">
+      
+    </div>
+
+  </div>
+</div>
+
+<div class="container" ng-controller="SecondCtrl">
+  <h3 style="color: white; font-weight: normal">Form Generator</h3>
+
+  <div class="row" ng-form="otherForm">
+
+
+    <div class="forClone">
+      <input type="text" ng-model="differentMessage" required />
+      {{message}}
+      <div class="alert alert-success" ng-show="deneme123.$valid">Valid</div>
+    </div>
+  
+    <div class="span4" id="source">
+      <a href="#" id="btn">Tik</a>
+    </div>
+    
+
+
+    <div id="target" class="span8">
+      
+    </div>
+
+  </div>
+</div>
+  
+
+
+</body>
+</html>

@@ -1,0 +1,164 @@
+body {
+  background: #fff url('../images/diamond_upholstery.png') center -200px;
+}
+
+#page-title {
+  color: #7a7a7a;
+  font-weight: normal;
+  text-align:center;
+  font-size: 2.5em;
+}
+
+.invalid {
+  background: #FFFFE0;
+  border-radius: 4px;
+  position: relative;
+}
+
+.invalid::after {
+  content: "invalid!" !important;
+  position: absolute;
+  top: 0;
+  right: 5px;
+  color: red;
+  font-size: 0.9em;
+}
+
+#source ul, li {
+  margin: 0;
+  padding:0;
+  list-style: none;
+}
+
+#source ul li a {
+  background: #fff url("../images/chevron_grey.png") 100% 50% no-repeat;
+  display: block;
+  padding: 10px;
+  color: #333;
+  border-bottom: 1px solid #eee;
+}
+
+#source ul li a:hover {
+  background-color: #f0f0f0;
+  text-decoration: none;
+}
+
+#source, #target {
+  top: -40px;
+  margin-top: 60px;
+  opacity: 1;
+  -webkit-transition: top 2s ease-in-out, opacity .2s ease-in-out;
+  -moz-transition: top 2s ease-in-out, opacity .2s ease-in-out;
+  -o-transition: top 2s ease-in-out, opacity .2s ease-in-out;
+  transition: top 2s ease-in-out, opacity .2s ease-in-out;
+}
+
+#source .source-ins,
+#target .target-ins,
+#form .form-ins {
+  padding: 20px;
+  background: #fff;
+  border-radius: 4px;
+  min-height: 440px;
+}
+
+#source, #target {
+  position: relative;
+}
+
+.item {
+  position: relative;
+}
+
+.item .popover {
+  left: -254px;
+  top: -40px;
+}
+
+.item .popover .arrow {
+  top: 50px;
+}
+
+.item .show-conf {
+  position: absolute;
+  display: none;
+}
+
+#form {
+  margin-top: 40px;
+  opacity: 0;
+}
+
+#target .form-actions {
+  margin: 0 -20px -40px;
+  border-radius: 0 0 4px 4px;
+  padding-left: 200px;
+}
+
+.new {
+  background: #FFFFE0;
+  border-radius: 4px;
+  position: relative;
+}
+
+.new::after {
+  content: "new" !important;
+  position: absolute;
+  top: 10px;
+  right: 5px;
+  color: red;
+  font-size: 0.9em;
+}
+
+.noneVisible { 
+  opacity: 0;
+}
+
+.ui-effects-transfer {
+  border-radius: 4px;
+  background: yellow;
+  opacity: .2;
+}
+
+.form-elements {
+  display: none;
+}
+
+.conf-popover {
+  width: 250px;
+  top: 0;
+  left: -255px;
+  margin-top: -40px;
+}
+
+.conf-popover label {
+  font-size: .9em;
+  line-height: .9em;
+  color: #999;
+}
+
+.conf-popover input {
+  font-size: .9em;
+  line-height: .9em;
+}
+
+.conf-popover .popover-content {
+  padding: 14px 14px 17px;
+}
+
+.conf-popover fieldset .control-group:last-child {
+  margin-bottom: 0;
+}
+
+.conf-popover.left .arrow {
+  top: 50px;
+}
+
+.conf-btn {
+  position: absolute;
+  display: none;
+}
+
+.input:hover .conf-btn {
+  display: block;
+}
