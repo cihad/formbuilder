@@ -9,7 +9,7 @@ FB.directive('confPopup', function($document, $compile, $templateCache) {
         '<div class="arrow"></div>' +
         '<div class="popover-inner">' +
           '<h3 class="popover-title" ng-bind="input.name"></h3>' +
-          '<div class="popover-content" ng-include src="\'/template/inputs/' + scope.input.type + '/conf.html\'">' +
+          '<div class="popover-content" ng-include src="\'template/inputs/' + scope.input.type + '/conf.html\'">' +
             confHtml +
           '</div>' +
         '</div>' +
