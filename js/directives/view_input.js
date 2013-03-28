@@ -17,7 +17,7 @@ FB.directive('viewInput', function($document, $timeout, $http, $compile, $templa
           '</div>' +
         '</div>' +
       '</div>' +
-      '<div ng-class="warningClass(form' + timestamp + ')" id="' + timestamp + '_input" ng-include src="\'/template/inputs/' + scope.input.type + '/input.html\'" >' +
+      '<div ng-class="warningClass(form' + timestamp + ')" id="' + timestamp + '_input" ng-include src="\'template/inputs/' + scope.input.type + '/input.html\'" >' +
       '</div>';
 
     var tooltip = $compile( template )( scope );
